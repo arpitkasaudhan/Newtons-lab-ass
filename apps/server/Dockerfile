@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 # Copy application dependency manifests to the container image.
 COPY package*.json ./
-
+COPY pnpm-lock.yaml ./
 
 # Install pnpm package manager
 RUN npm install -g pnpm
